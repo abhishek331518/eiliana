@@ -1,0 +1,29 @@
+.hom{   
+background: #FFFFFF;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 0px 110px 0px 0px;
+opacity: 1;
+}
+
+h1{   
+font: 32px/45px Poppins;
+text-align: center;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+p{
+    text-align: center;
+font: normal normal 300 15px/25px Poppins;
+letter-spacing: 0.15px;
+color: #000000;
+opacity: 1;
+}
+.banner{
+    margin-left: 50%;
+}
+
+Button{
+    margin-left: 50px;
+}
