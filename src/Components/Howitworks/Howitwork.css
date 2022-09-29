@@ -1,0 +1,51 @@
+.how {
+  width: 250vh;
+}
+.it {
+  margin-left: 200px;
+  margin-top: 50px;
+  line-height: 1.5;
+}
+.ci {
+  text-align: left;
+  margin-left: 200px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.pri {
+  background-color: #f1edeb;
+}
+
+.pr {
+  margin-top: 70px;
+}
+.you {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.free {
+  margin-top: 40px;
+  color: red;
+  margin-left: 200px;
+}
+
+.bring {
+  margin-top: 20px;
+  margin-left: 200px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.sign {
+  margin-top: 80px;
+}
+
+.reg {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 16px;
+}

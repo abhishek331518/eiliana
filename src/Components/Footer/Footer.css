@@ -1,8 +1,24 @@
-.foot{
-    /* width: 1920px;
-height: 510px;
-background: #FBF8F3 0% 0% no-repeat padding-box;
-opacity: 1; */
-background-color: #FBF8F3;
-height: 510px;
+.foot {
+  padding-top: 100px;
+  background-color: #fbf8f3;
+  width: auto;
+  height: 510px;
+}
+.eili {
+  line-height: 1.5;
+  text-align: left;
+  font-size: 30px;
+  font: normal normal bold Montserrat;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.eilia {
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: left;
+  font: normal normal normal Montserrat;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }

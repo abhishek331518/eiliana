@@ -12,36 +12,36 @@ function Footer() {
     <Container>
       <Row>
         <Col>
-          <h3>eiliana</h3>
-          <p>Eiliana is an evolving online portal<br/> creating opportunities for Freelancers<br/> around the globe to connect.</p>
+          <h3 className='eili'>eiliana</h3>
+          <p className='eilia'>Eiliana is an evolving online portal<br/> creating opportunities for Freelancers<br/> around the globe to connect.</p>
         </Col>
         <Col>
-          <h3>Categories</h3>
-          <p>Development & Testing</p>
-          <p>UI & Desigm</p>
-          <p>Animation & Video</p>
-          <p>Content & Marketing</p>
+          <h3 className='eili'>Categories</h3>
+          <p className='eilia'>Development & Testing</p>
+          <p className='eilia'>UI & Desigm</p>
+          <p className='eilia'>Animation & Video</p>
+          <p className='eilia'>Content & Marketing</p>
         </Col>
         <Col>
-        <h3>Product</h3>
-          <p>Contract Staffing</p>
-          <p>Reafer a Friend</p>
-          <p>Product Referral</p>
-          <p>Commercial Terms</p>
+        <h3 className='eili'>Product</h3>
+          <p className='eilia'>Contract Staffing</p>
+          <p className='eilia'>Reafer a Friend</p>
+          <p className='eilia'>Product Referral</p>
+          <p className='eilia'>Commercial Terms</p>
         </Col>
         <Col>
-        <h3>Company</h3>
-          <p>About us</p>
-          <p>Carrer</p>
-          <p>Blogs</p>
-          <p>Values@Eiliana</p>
-          <p>User Agreement</p>
-          <p>Privacy Policy</p>
-          <p>Contact Us</p>
-          <p>Sitemap</p>
+        <h3 className='eili'>Company</h3>
+          <p className='eilia'>About us</p>
+          <p className='eilia'>Carrer</p>
+          <p className='eilia'>Blogs</p>
+          <p className='eilia'>Values@Eiliana</p>
+          <p className='eilia'>User Agreement</p>
+          <p className='eilia'>Privacy Policy</p>
+          <p className='eilia'>Contact Us</p>
+          <p className='eilia'>Sitemap</p>
         </Col>
         <Col>
-        <h1>Stay up to date</h1>
+        <h1 className='eili'>Stay up to date</h1>
         <Form className="d-flex">
             <Form.Control
               type="search"

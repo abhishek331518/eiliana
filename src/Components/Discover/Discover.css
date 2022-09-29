@@ -1,0 +1,32 @@
+.masg {
+  padding-top: 120px;
+  width: 664px;
+  height: 592px;
+}
+.dig {
+  font-size: 60px;
+  line-height: 1.5;
+  text-align: left;
+  font: normal normal Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.pr {
+  line-height: 1.5;
+  font-size: 33px;
+  text-align: left;
+  font: normal normal Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.ch {
+  line-height: 1.5;
+  text-align: left;
+  font-size: 20px;
+  font: normal normal normal Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}

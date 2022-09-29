@@ -1,4 +1,26 @@
-.im{
-    width: 774px;
-    height: 645px;
+.im {
+  width: 774px;
+  height: 645px;
+}
+.work {
+  line-height: 1.5;
+  padding-top: 50px;
+  font-size: 50px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.art {
+  padding-top: 70px;
+  padding-bottom: 130px;
+}
+.lor {
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: left;
+  font: normal normal 300 Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }

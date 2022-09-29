@@ -1,0 +1,31 @@
+.spo {
+  width: 943px;
+  height: 532px;
+  background: #fbf8f3 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.tes {
+  width: 505px;
+  height: 370px;
+  background: #233d4d 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-right: 20px;
+}
+.ments {
+  line-height: 1.5;
+  font-size: 45px;
+  text-align: left;
+  font: normal normal Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+.dolor {
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: left;
+  font: normal normal Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}

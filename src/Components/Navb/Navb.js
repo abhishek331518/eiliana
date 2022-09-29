@@ -1,35 +1,55 @@
-import './Navb.css';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Login from "../Login/Login";
+import Load from "../../load";
+import Signup from "../Signup/Signup";
+import Howitworks from "../Howitworks/Howitworks";
+import Projectreferral from "../Projectreferral/Projectreferral";
+import Log from "../Assets/logo.png";
+import "./Navb.css";
+//import Contact from './Contact';
 
 function Navb() {
   return (
-   <>
-    <Navbar bg="light" expand="lg">
-      <Container fluid>
-        <Navbar.Brand href="#">eiliana</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="#action1">Post a Project</Nav.Link>
-            <Nav.Link href="#action2">How it Works</Nav.Link>
-            <Nav.Link href="#">Projects Referral</Nav.Link>
-          </Nav>
-          <Form className="d-flex">
-            <Button variant="outline-success">LOGIN</Button>
-            <Button variant="danger">SIGN UP</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-   </>
+    <BrowserRouter>
+      <>
+        <Navbar bg="light" variant="primary" sticky="top">
+          <Container>
+            <Nav className="me-auto">
+              <Nav.Link as={Link} to={"/"}>
+                <img className="na" src={Log} alt="logo" />
+              </Nav.Link>
+              <Nav.Link as={Link} to={"/"}>
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to={"/howitworks"}>
+                How it works
+              </Nav.Link>
+              <Nav.Link as={Link} to={"/projectreferral"}>
+                Project referral
+              </Nav.Link>
+              <Nav.Link as={Link} to={"/login"}>
+                Login
+              </Nav.Link>
+              <Nav.Link as={Link} to={"/signup"}>
+                Signup
+              </Nav.Link>
+            </Nav>
+          </Container>
+        </Navbar>
+      </>
+      <div>
+        <Routes>
+          <Route path="/" element={<Load />} />
+          <Route path="/howitworks" element={<Howitworks />} />
+          <Route path="/projectreferral" element={<Projectreferral />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

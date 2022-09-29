@@ -1,0 +1,33 @@
+.mas {
+  width: 524px;
+  height: 600px;
+}
+.sma {
+  top: 3613px;
+  left: 0px;
+  width: auto;
+  height: 600px;
+  background: #f8f8f8 no-repeat padding-box;
+  opacity: 1;
+}
+.ha {
+  font-size: 50px;
+  text-align: left;
+  line-height: 1.5;
+}
+.st {
+  font-size: 40px;
+  text-align: left;
+}
+.re {
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+/* .smart{
+    padding-top: 60px;
+} */
+
+.sm {
+  margin-top: 100px;
+}
