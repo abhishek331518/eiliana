@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Sing from "../Assets/singup.png";
+//import { useHistory } from "react-router-dom";
 import {
   MDBBtn,
   MDBContainer,
@@ -13,6 +14,26 @@ import {
 } from "mdb-react-ui-kit";
 
 function Signup() {
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  // const history = useHistory();
+  async function signup() {
+    let item = { firstname, lastname, email, password };
+    console.warn(item);
+    // let result = await fetch("", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Accept: "application/json",
+    //   },
+    //   body: JSON.stringify(items),
+    // });
+    // result = await result.json();
+    // localStorage.setItem("user-info", JSON.stringify(result));
+    // history.push("/add");
+  }
   return (
     <MDBContainer fluid className="p-4">
       <MDBRow>
@@ -26,6 +47,8 @@ function Signup() {
                     label="First name"
                     id="form1"
                     type="text"
+                    value={firstname}
+                    onChange={(e) => setFirstname(e.target.value)}
                   />
                 </MDBCol>
 
@@ -35,6 +58,8 @@ function Signup() {
                     label="Last name"
                     id="form1"
                     type="text"
+                    value={lastname}
+                    onChange={(e) => setLastname(e.target.value)}
                   />
                 </MDBCol>
               </MDBRow>
@@ -44,12 +69,16 @@ function Signup() {
                 label="Email"
                 id="form1"
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <MDBInput
                 wrapperClass="mb-4"
                 label="Password"
                 id="form1"
                 type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
 
               <div className="d-flex justify-content-center mb-4">
@@ -61,7 +90,7 @@ function Signup() {
                 />
               </div>
 
-              <MDBBtn className="w-100 mb-4" size="md">
+              <MDBBtn onClick={signup} className="w-100 mb-4" size="md">
                 sign up
               </MDBBtn>
 
