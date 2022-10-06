@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.35bf3c3c.css",
+    "main.js": "/static/js/main.5f104f63.js",
+    "static/media/Adobe.png": "/static/media/Adobe.e4ab7b799a3db490ca92.png",
+    "static/media/singup.png": "/static/media/singup.939fe4bd73a599e89a2f.png",
+    "static/media/Mas.png": "/static/media/Mas.74003f2f5f2dbd92a73c.png",
+    "static/media/Mask.png": "/static/media/Mask.a2bdfe7994ef2db3c940.png",
+    "static/media/how-its-1.png": "/static/media/how-its-1.bb0fa5032759c7ffbde4.png",
+    "static/media/Gr.png": "/static/media/Gr.a21fb42b3bee205cd72e.png",
+    "static/media/Ma.png": "/static/media/Ma.dec9bd1dc843bdf91827.png",
+    "static/media/sales-referal-new1.png": "/static/media/sales-referal-new1.bbc5ac34debffc8d1d02.png",
+    "static/media/Grou.png": "/static/media/Grou.2edd4f58e680c149cc9e.png",
+    "static/media/Banner2.jpg": "/static/media/Banner2.8d01ae9ee8a5a3c2d09c.jpg",
+    "static/media/Banner6.jpg": "/static/media/Banner6.3fcd89e15a7b06a25e4a.jpg",
+    "static/media/Banner1.jpg": "/static/media/Banner1.0cb7ced61341220f307f.jpg",
+    "static/media/dashboard.jpg": "/static/media/dashboard.86969d33e39063747c81.jpg",
+    "static/media/Howitwor.jpg": "/static/media/Howitwor.b79f32f4aa8f2c3382f2.jpg",
+    "static/media/Banner5.jpg": "/static/media/Banner5.4e58ad11b0ac715b4d6a.jpg",
+    "static/media/how-its-2.png": "/static/media/how-its-2.2d035dc31b21258e93d3.png",
+    "static/media/project-referral-banner.jpg": "/static/media/project-referral-banner.64c1829cd395b6b41c04.jpg",
+    "static/media/Banner3.jpg": "/static/media/Banner3.53d2a60422d2d02babe6.jpg",
+    "static/media/Banner4.jpg": "/static/media/Banner4.535673e40865d3b63cd4.jpg",
+    "index.html": "/index.html",
+    "main.35bf3c3c.css.map": "/static/css/main.35bf3c3c.css.map",
+    "main.5f104f63.js.map": "/static/js/main.5f104f63.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35bf3c3c.css",
+    "static/js/main.5f104f63.js"
+  ]
+}

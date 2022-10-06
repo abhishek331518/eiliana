@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
 import axios from "axios";
-
 import Login from "./Components/Login";
 import Dashboard from "./Components/Dashboard";
-import Load from "./Load";
+import Load from "./load";
 import Signup from "./Components/Signup/Signup";
 import Howitworks from "./Components/Howitworks/Howitworks";
 import Projectreferral from "./Components/Projectreferral/Projectreferral";
-
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import PrivateRoute from "./Utils/PrivateRoute";
 import PublicRoute from "./Utils/PublicRoute";
 import { getToken, removeUserSession, setUserSession } from "./Utils/Common";
