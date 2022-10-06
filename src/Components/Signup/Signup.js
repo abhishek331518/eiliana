@@ -9,18 +9,20 @@ import {
   MDBCard,
   MDBCardBody,
   MDBInput,
-  MDBCheckbox,
+  // MDBCheckbox,
   MDBIcon,
 } from "mdb-react-ui-kit";
+import "./Signup.css";
+import Footer from "../Footer/Footer";
 
 function Signup() {
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
-  const [password, setPassword] = useState("");
-  const [email, setEmail] = useState("");
+  //const [firstname, setFirstname] = useState("");
+  const [MobileNumber, setMobileNumber] = useState("");
+  //const [password, setPassword] = useState("");
+  const [Email, setEmail] = useState("");
   // const history = useHistory();
   async function signup() {
-    let item = { firstname, lastname, email, password };
+    let item = { Email, MobileNumber };
     console.warn(item);
     // let result = await fetch("", {
     //   method: "POST",
@@ -41,7 +43,7 @@ function Signup() {
           <MDBCard className="my-5">
             <MDBCardBody className="p-5">
               <MDBRow>
-                <MDBCol col="6">
+                {/* <MDBCol col="6">
                   <MDBInput
                     wrapperClass="mb-4"
                     label="First name"
@@ -50,16 +52,16 @@ function Signup() {
                     value={firstname}
                     onChange={(e) => setFirstname(e.target.value)}
                   />
-                </MDBCol>
+                </MDBCol> */}
 
                 <MDBCol col="6">
                   <MDBInput
                     wrapperClass="mb-4"
-                    label="Last name"
+                    label="Mobile Number"
                     id="form1"
                     type="text"
-                    value={lastname}
-                    onChange={(e) => setLastname(e.target.value)}
+                    value={MobileNumber}
+                    onChange={(e) => setMobileNumber(e.target.value)}
                   />
                 </MDBCol>
               </MDBRow>
@@ -69,33 +71,33 @@ function Signup() {
                 label="Email"
                 id="form1"
                 type="email"
-                value={email}
+                value={Email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <MDBInput
+              {/* <MDBInput
                 wrapperClass="mb-4"
                 label="Password"
                 id="form1"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-              />
+              /> */}
 
-              <div className="d-flex justify-content-center mb-4">
+              {/* <div className="d-flex justify-content-center mb-4">
                 <MDBCheckbox
                   name="flexCheck"
                   value=""
                   id="flexCheckDefault"
                   label="Subscribe to our newsletter"
                 />
-              </div>
+              </div> */}
 
               <MDBBtn onClick={signup} className="w-100 mb-4" size="md">
                 sign up
               </MDBBtn>
 
               <div className="text-center">
-                <p>or sign up with:</p>
+                <p></p>
 
                 <MDBBtn
                   tag="a"
@@ -146,9 +148,10 @@ function Signup() {
         </MDBCol> */}
 
         <MDBCol md="6">
-          <img src={Sing} alt="sign" />
+          <img className="signimage" src={Sing} alt="sign" />
         </MDBCol>
       </MDBRow>
+      <Footer />
     </MDBContainer>
   );
 }

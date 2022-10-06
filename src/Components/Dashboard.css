@@ -1,0 +1,22 @@
+ul {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  /* flex-direction: column; */
+}
+li {
+  text-decoration: none;
+  padding-left: 25px;
+}
+input {
+  margin-left: 20px;
+}
+.most {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.card {
+  margin-left: 100px;
+  margin-top: 50px;
+}

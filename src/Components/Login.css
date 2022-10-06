@@ -1,0 +1,28 @@
+.cont {
+  height: 500px;
+  width: 200vh;
+  border: 1px solid black;
+  box-shadow: 0px 3px 6px #00000029;
+  background: aqua;
+}
+
+.ema {
+  margin-left: 300px;
+  padding-top: 100px;
+  text-align: left;
+}
+
+.loginimg {
+  height: 700px;
+  width: 500px;
+
+  padding-bottom: 400px;
+  padding-right: 200px;
+}
+/* img {
+  margin-bottom: 100px;
+} */
+
+.stron {
+  text-align: left;
+}
