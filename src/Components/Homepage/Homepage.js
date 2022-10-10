@@ -11,10 +11,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import Carousel from "react-bootstrap/Carousel";
+import Header from "../Header/Header";
+
 
 function Homepage() {
   return (
     <>
+    <Header/>
       <Carousel>
         <Carousel.Item interval={1000}>
           <img className="d-block w-100" src={Banner1} alt="First slide" />

@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
 import axios from "axios";
 import Login from "./Components/Login";
 import Dashboard from "./Components/Dashboard";
-import Load from "./load";
+import Load from "./Load";
 import Signup from "./Components/Signup/Signup";
 import Howitworks from "./Components/Howitworks/Howitworks";
 import Projectreferral from "./Components/Projectreferral/Projectreferral";
@@ -11,9 +11,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import PrivateRoute from "./Utils/PrivateRoute";
 import PublicRoute from "./Utils/PublicRoute";
 import { getToken, removeUserSession, setUserSession } from "./Utils/Common";
+import Signupdashboard from "./Components/Signup/Signupdashboard";
+import Password from "./Components/Signup/Password";
+import { initSignupDashboard } from "./services/service";
+
 
 function App() {
   const [authLoading, setAuthLoading] = useState(true);
+
+  initSignupDashboard();
 
   useEffect(() => {
     const token = getToken();
@@ -40,24 +46,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div>
-          <div className="header">
-            <NavLink exact activeClassName="active" to="/">
-              Home
-            </NavLink>
-            <NavLink activeClassName="active" to="/Howitworks">
-              How it Works
-            </NavLink>
-            <NavLink activeClassName="active" to="/Projectreferral">
-              Project Referral
-            </NavLink>
-            <NavLink activeClassName="active" to="/login">
-              Login
-            </NavLink>
-            <NavLink activeClassName="active" to="/Signup">
-              Sign Up
-            </NavLink>
-          </div>
+        {/* <div> */}
           <div className="content">
             <Switch>
               <Route exact path="/" component={Load} />
@@ -71,9 +60,19 @@ function App() {
               <Route exact path="/Signup" component={Signup} />
               {/* <PublicRoute path="/Signup" component={Signup} /> */}
               <PrivateRoute path="/dashboard" component={Dashboard} />
+              <Route
+                exact
+                path="/signupDashboard"
+                component={Signupdashboard}
+              />
+              <Route
+                exact
+                path="/password"
+                component={Password}
+              />
             </Switch>
           </div>
-        </div>
+        {/* </div> */}
       </BrowserRouter>
     </div>
   );

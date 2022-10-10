@@ -8,6 +8,15 @@ export const getUser = () => {
   else return null;
 };
 
+export const loggedIn = () => {
+  const userStr = localStorage.getItem("userData");
+  if(userStr != null){
+    return true;
+  }else{
+    return false;
+  }
+}
+
 // return the token from the session storage
 export const getToken = () => {
   return sessionStorage.getItem("token") || null;

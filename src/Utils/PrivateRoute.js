@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import { getToken } from "./Common";
+import { getToken, getUser, loggedIn } from "./Common";
 
 // handle the private routes
 function PrivateRoute({ component: Component, ...rest }) {
@@ -8,12 +8,16 @@ function PrivateRoute({ component: Component, ...rest }) {
     <Route
       {...rest}
       render={(props) =>
-        getToken() ? (
+        loggedIn() ? (
           <Component {...props} />
+          // <Redirect
+          //   to={{ pathname: "/dashboard" }}
+          // />
         ) : (
-          <Redirect
-            to={{ pathname: "/login", state: { from: props.location } }}
-          />
+          <div>testw</div>
+          // <Redirect
+          //   to={{ pathname: "/dashboard", state: { from: props.location } }}
+          // />
         )
       }
     />

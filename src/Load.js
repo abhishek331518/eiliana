@@ -8,7 +8,6 @@ import Smart from "./Components/Smart/Smart";
 import Discover from "./Components/Discover/Discover";
 import Categories from "./Components/Categories/Categories";
 
-
 function Load() {
   return (
     <>
